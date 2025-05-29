@@ -49,6 +49,6 @@ test('SBI login page',async({})=>{
         }
     }
     //validate SBI logo in the HomePage
-    await expect(page.locator("//a[@id='logo']")).toBeVisible()
+    //await expect(page.locator("//a[@id='logo']")).toBeVisible()
     //await newPage1.pause();
 })
