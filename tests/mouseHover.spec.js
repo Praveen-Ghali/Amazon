@@ -4,7 +4,7 @@ test('mouse hover action',async({page})=>{
     await page.locator("//a[text()='Men' and @class='desktop-main']").hover()
     await page.pause()
 })
-test.only('Double click',async({page})=>{
+test('Double click',async({page})=>{
     await page.goto("https://demoapps.qspiders.com/ui/button/buttonDouble?sublist=2")
     await page.locator("//button[text()='Yes']").dblclick()
     await page.pause()

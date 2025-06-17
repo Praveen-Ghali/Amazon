@@ -47,7 +47,7 @@ test('add iphone-15 product to the amazon cart',async({})=>{
   
 })
 
-test.only('add to product in flifcart cart',async({})=>{
+test('add to product in flifcart cart',async({})=>{
     browser=await chromium.launch();
     context=await browser.newContext();
     page1=await context.newPage();

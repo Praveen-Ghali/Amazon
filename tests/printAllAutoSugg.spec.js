@@ -21,7 +21,7 @@ test('print autoSugg',async({page})=>{
 
 })
 
-test.only('myntra autosugg',async({page})=>{
+test('myntra autosugg',async({page})=>{
     await page.goto("https://www.flipkart.com/")
     await page.getByPlaceholder('Search for Products, Brands and More').fill('iphone 16')
     await page.waitForSelector("//div[contains(text(),' 5g')]")

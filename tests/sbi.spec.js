@@ -30,8 +30,9 @@ test('SBI login page',async({})=>{
     await newPage1.click("//span[text()='click here']");
     const newPage2=await pagePromise1
     //hover on Accounts tab
-    await newPage2.hover("//ul[@class='dropdown-menu intro dis_table']//a[@class='align-items-center dropdown-item dropdown-toggle'][normalize-space()='Accounts']")
     
+    await newPage2.hover("//ul[@class='dropdown-menu intro dis_table']//a[@class='align-items-center dropdown-item dropdown-toggle'][normalize-space()='Accounts']",({timeout:40000}))
+    await newPage2.waitForSelector("//a[@class='dropdown-item']")
     const allItem=await newPage2.locator("//a[@class='dropdown-item']").all()
     for(let a of allItem){
         let text=await a.textContent();
@@ -39,7 +40,7 @@ test('SBI login page',async({})=>{
             await a.click();
             await expect(newPage2.locator("//h1[text()='NRE Salary Account - NRI']")).toBeVisible()
         }
-        console.log(text)
+        //console.log(text)
     }
     for(const p of context.pages()){
         let title=await p.url();
@@ -52,3 +53,20 @@ test('SBI login page',async({})=>{
     //await expect(page.locator("//a[@id='logo']")).toBeVisible()
     //await newPage1.pause();
 })
+
+
+
+test('test', async ({ page }) => {
+  await page.goto('https://www.flipkart.com/');
+  await page.getByRole('textbox', { name: 'Search for Products, Brands' }).click();
+  await page.getByRole('textbox', { name: 'Search for Products, Brands' }).fill('Iphone');
+  await page.getByRole('textbox', { name: 'Search for Products, Brands' }).press('ArrowDown');
+  await page.getByRole('textbox', { name: 'Search for Products, Brands' }).press('Enter');
+  const page1Promise = page.waitForEvent('popup');
+  await page.getByRole('link', { name: 'Apple iPhone 15 (Black, 128' }).click();
+  const page1 = await page1Promise;
+  await page1.getByRole('button', { name: 'Add to cart' }).click();
+  await page1.getByRole('button', { name: '+' }).click();
+  await page1.getByText('Remove').click();
+  await page1.getByText('Remove').nth(2).click();
+});

@@ -3,6 +3,7 @@ class HomePage{
         this.page=page;
         this.searcTbx=page.locator("//input[@id='twotabsearchtextbox']")
         this.allProdocts=page.$$("//h2[@class='a-size-medium a-spacing-none a-color-base a-text-normal']")
+        
     }
     async url(u,p){
         await this.page.goto(u)
