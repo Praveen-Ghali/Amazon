@@ -1,4 +1,7 @@
 import Prompt from "prompt-sync";
 //import prompt from "prompt-sync";
+const prompt = Prompt();
 let userInput = prompt("Enter your name:");
-console.log("You entered:", userInput);
+const promptInstance = Prompt();
+let anotherInput = promptInstance("Enter your age:");
+console.log("You entered age:", anotherInput);
