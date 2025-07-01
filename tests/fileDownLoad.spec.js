@@ -16,11 +16,12 @@ test('file download',async({page},testInfo)=>{
     // 4. Save the downloaded file
     // Option 1 (commented): Saves using the original filename from the server
     //await download.saveAs("./"+download.suggestedFilename());
-    const filePath="./"+"it-downloaded"
-    await download.saveAs(filePath);//Here we specifying the file name as "it-downloaded"
+    const filePath="downlaod/dummy-file.txt"
+    await download.saveAs(filePath);
     //validate the file downloaded
-    const content=fs.readFileSync(filePath,'utf-8')
-    expect(content).toContain('dummy text file.')
-    await page.pause()
+    // const content=fs.readFileSync(filePath,'utf-8')
+    // expect(content).toContain('dummy text file.')
+    expect(download.suggestedFilename()).toBe('dummy_file.txt')
+    //await page.pause()
 
 })

@@ -2,7 +2,6 @@ import {test, expect, chromium, firefox} from "@playwright/test"
 import HomePage from "../POM/HomePage.js"
 import HomePageData from "../testData/HomePage.json"
 import { log } from "console"
-
     let browser;
     let context;
     let page1;
@@ -13,13 +12,13 @@ test('Add to cart',async({})=>{
 
     const url=HomePageData.url
     const p1=HomePageData.product
-    let Home=new HomePage(page)
+    let Home=new HomePage(page1)
 
     await Home.url(url,p1)
     const pagePromise=context.waitForEvent("page")
     await Home.clickProduct()
     const newPage=await pagePromise
-    await page.pause()
+    await page1.pause()
 
 })
 test('add iphone-15 product to the amazon cart',async({})=>{

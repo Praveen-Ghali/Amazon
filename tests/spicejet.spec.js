@@ -5,7 +5,8 @@ test('search number flights availability',async({browser})=>{
 });
 const page = await context.newPage();
     //trigger the url
-    await page.goto("https://www.spicejet.com/")
+    await page.goto("https://www.spicejet.com/",{waitUntil:"load"})
+    
     const t=await page.title()
     await expect(page).toHaveTitle('SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets')
     await expect(page).toHaveURL('https://www.spicejet.com/')
@@ -24,6 +25,7 @@ const page = await context.newPage();
     //select departure date
     await page.getByTestId('departure-date-dropdown-label-test-id').click();
     await page.locator("//div[@class='css-1dbjc4n r-1loqt21 r-u8s1d r-11xbo3g r-1v2oles r-1otgn73 r-16zfatd r-eafdt9 r-1i6wzkk r-lrvibr r-184en5c']").click()
+    await page.waitForSelector("//div[@class='css-1dbjc4n r-1loqt21 r-u8s1d r-11xbo3g r-1v2oles r-1otgn73 r-16zfatd r-eafdt9 r-1i6wzkk r-lrvibr r-184en5c']")
     await page.click("//div[text()='August ']/ancestor::div[@data-testid='undefined-month-August-2025']/descendant::div[@data-testid='undefined-calendar-day-20']")
     await page.click("//div[text()='Passengers']/..");
     await page.getByTestId('Adult-testID-plus-one-cta').click();

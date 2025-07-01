@@ -1,0 +1,187 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - link "SBI Logo":
+    - /url: https://bank.sbi/
+  - link "Skip to main content":
+    - /url: "#mainContent"
+- navigation:
+  - list:
+    - listitem:
+      - link "Services":
+        - /url: javascript:void(0)
+    - listitem:
+      - link "FAQ":
+        - /url: javascript:void(0)
+    - listitem:
+      - link "Corporate Website":
+        - /url: https://bank.sbi/
+    - listitem:
+      - link "SBIePay Lite":
+        - /url: javascript:void(0)
+        - text: SBIePay Lite (SBMOPS)
+    - listitem:
+      - link "Donations":
+        - /url: https://bank.sbi/web/personal-banking/donations
+    - listitem:
+      - link "SB Collect":
+        - /url: https://www.onlinesbi.sbi/sbicollect/icollecthome.htm
+    - listitem:
+      - link "OnlineSBI VIDEOS":
+        - /url: javascript:void(0)
+        - text: Videos
+    - listitem:
+      - link "mCash":
+        - /url: https://retail.onlinesbi.sbi/retail/mcashclaimwin.htm
+    - listitem:
+      - link "Apply for SB/ Current Account":
+        - /url: javascript:void(0)
+        - text: Apply for SB/ Current Account
+        - superscript: New
+    - listitem:
+      - link "SBI Unipay":
+        - /url: https://customer.sbiunipay.sbi/CustomerPortal/quickPay
+    - listitem:
+      - link "SBI Loans":
+        - /url: javascript:void(0)
+        - text: SBI Loans
+        - superscript: New
+  - link "Change Language to Hindi":
+    - /url: hindi/sbi_home.html
+    - text: हिंदी
+- text: If slowness is observed during Login Page loading, please refresh the page for better experience. SBI never asks for confidential information such as PIN and OTP from customers. Any such call can be made only by a fraudster. Please do not share personal info.
+- main:
+  - heading "Personal Banking" [level=1]:
+    - link "Personal Banking":
+      - /url: https://retail.onlinesbi.sbi/npersonal/sbi_home.html
+      - text: PERSONAL BANKING
+  - link "Personal Banking Login":
+    - /url: https://retail.onlinesbi.sbi/retail/login.htm
+    - text: LOGIN
+    - img "Personal Login"
+  - paragraph
+  - link "New User Registration":
+    - /url: javascript:void(0);
+    - text: New User Registration / Activation
+  - link "How do i register retail Internet banking":
+    - /url: help_personal.html
+    - text: How Do I
+  - link "Customer Request and Complaint Form":
+    - /url: https://crcf.bank.sbi/
+    - text: Customer Care
+  - link "Lock & Unlock User":
+    - /url: javascript:void(0)
+  - paragraph: SBI's internet banking portal provides personal banking services that gives you complete control over all your banking demands online.
+  - img "yono BUSINESS"
+  - link "Corporate Banking":
+    - /url: https://yonobusiness.sbi/
+    - text: CORPORATE BANKING
+  - button "Yono business login":
+    - text: yono BUSINESS
+    - superscript: New
+  - link "Login":
+    - /url: javascript:void(0);
+    - text: LOGIN
+  - paragraph:
+    - emphasis: Have you tried our new simplified and intuitive business banking platform? Log in to yonobusiness.sbi to avail business banking services.
+  - link "New Corporate Registration":
+    - /url: https://yonobusiness.sbi/preonboard/landing/registration
+  - link "How do I register for yono BUSINESS":
+    - /url: https://corp.onlinesbi.sbi/ybbihelp/help_corporate.html
+    - text: How Do I
+  - link "yono Business customer support":
+    - /url: https://yonobusiness.sbi/ContactUs
+    - text: Customer Care
+  - paragraph: Corporate Banking application to administer and manage non personal accounts online.
+  - paragraph: Dear Customer, due to our routine banking maintenance activities, you may experience intermittent fluctuations for 3 to 4 minutes between 4.45 AM and 5.45 AM IST daily. We sincerely regret the inconvenience caused. | Customers can now deposit Income Tax/Corporate Taxes using all Bank Debit Cards and Credit Cards under State Bank Payment Gateway. | Mandatory Profile password change after 365 days introduced for added security. | Call us toll free on 1800 1234 and 1800 2100 and get a wide range of services through SBI Contact Centre. | SBI never asks for your Card/PIN/OTP/CVV details on phone, message or email. Please do not click on links received on your email or mobile asking your Bank/Card details.
+  - link "Register Complaint of Unauthorized Transaction":
+    - /url: https://crcf.bank.sbi/ccf/home/UnAuth/
+    - strong: Register Complaint of Unauthorized Transaction
+  - link "Queue Management System":
+    - /url: https://qms.bank.sbi/
+  - link "RBI Retail Direct portal":
+    - /url: https://rbiretaildirect.org.in
+  - link "Block ATM Card":
+    - /url: https://retail.onlinesbi.sbi/retail/blockatmcardintermediate.htm
+  - link "Banking Forms":
+    - /url: https://retail.onlinesbi.sbi/npersonal/reg_forms.html
+  - link "Doorstep Banking":
+    - /url: https://www.psballiance.com/doorstep-banking.html
+  - link "SBI General Insurance Document Download":
+    - /url: https://www.sbigeneral.in/portal/downloads
+  - link "SBI FasTag":
+    - /url: https://fastag.bank.sbi
+  - link "SBI Salary Account":
+    - /url: https://bank.sbi/web/salary-account
+  - link "NRI Services":
+    - /url: https://bank.sbi/web/nri/home
+  - link "CYBER CRIME HELPLINE":
+    - /url: https://cybercrime.gov.in/
+  - link "SBI Securities":
+    - /url: https://www.sbisecurities.in/
+  - link "SBI Express Remit":
+    - /url: https://remit.sbi/
+  - link "SBI Mutual Fund":
+    - /url: https://www.sbimf.com/en-us/quick-invest?arn_code=ARN12195
+  - link "SBI Life Insurance":
+    - /url: https://www.sbilife.co.in
+  - link "SBI Card":
+    - /url: http://www.sbicard.com/
+  - link "More Useful Links":
+    - /url: javascript:void(0)
+    - text: ▾ More Useful Links
+  - list:
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem:
+      - button "Carousel pause":
+        - img "Pause"
+    - listitem:
+      - button "Carousel play":
+        - img "Play"
+  - img "Digital eRupee"
+  - button "Carousel Previous Button"
+  - button "Carousel Next Button"
+- contentinfo:
+  - paragraph: © State Bank of India (APM Id:Serv_Tran_564)
+  - link "SBI Official Facebook Page":
+    - /url: https://www.facebook.com/StateBankofIndia
+    - text: SBI Official Facebook
+  - link "SBI Official Twitter Link":
+    - /url: https://twitter.com/TheOfficialSBI
+    - text: SBI Official Twitter
+  - link "SBI Official YouTube Link":
+    - /url: http://www.youtube.com/theofficialsbi
+    - text: SBI Official YouTube
+  - link "SBI Official LinkedIn Link":
+    - /url: https://www.linkedin.com/company/state-bank-of-india/
+    - text: SBI Official LinkedIn
+  - link "SBI Official instagram Link":
+    - /url: https://instagram.com/theofficialsbi/
+    - text: SBI Official Instagram
+  - link "SBI Official Pinterest Link":
+    - /url: https://www.pinterest.com/TheOfficialSBI/
+    - text: SBI Official Pinterest
+  - link "Contact Us":
+    - /url: https://retail.onlinesbi.sbi/npersonal/contact_us.html
+  - link "Whatsapp Banking":
+    - /url: https://bank.sbi/web/personal-banking/digital/whatsapp-banking
+  - paragraph: Site best viewed at 1280 × 720 resolution in Microsoft Edge 100+, Mozilla 100+, Google Chrome 111+
+```
